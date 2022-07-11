@@ -1,0 +1,36 @@
+header{
+    background-color: #393939;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.4);
+    align-items: center;
+    padding: 0.5em 0.5em;
+}
+
+header span{
+    font-weight: bold;
+}
+
+.HeaderIcon{
+    display: flex;
+    align-items: center;
+}
+
+.searchBar input{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #777;
+    padding: 5px 8px;
+}
+
+.HeaderUserInfo{
+    padding: 8px 1em;
+
+}
+
+.HeaderUserInfo a {
+    color: white;
+    text-decoration: none;
+}
