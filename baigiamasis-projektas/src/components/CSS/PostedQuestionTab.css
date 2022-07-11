@@ -1,0 +1,47 @@
+.QuestionTab {
+    background-color: rgba(255, 255, 255, 0.03);
+    display: grid;
+    grid-template-columns: repeat(3, 60px) 1fr;
+    gap: 10px;
+    padding: 0.5em 0.5em;
+    align-items: center;
+    border: 0.5px solid rgba(150, 149, 149,0.5);
+}
+
+.QuestionTab h3 {
+    margin: 0px 0;
+    text-decoration: none;
+    color: rgb(62, 104, 219);
+}
+
+
+.QuestionStatistics {
+    text-align: center;
+}
+
+
+.QuestionStatistics h4 {
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+.QuestionDetails span{
+    display: inline-block;
+    background-color: #3e4a52;
+    color: #9cc3db;
+    padding: 4px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.QuestionDetails a{
+    display: inline-block;
+    float: right;
+    margin: 0;
+    text-decoration: none;
+    color: gray;
+}
+
+.QuestionDetailsUser{
+
+}

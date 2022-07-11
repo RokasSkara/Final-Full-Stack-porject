@@ -1,0 +1,17 @@
+
+
+.TopBarQuestionsTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2em 0.5em;
+}
+
+.TopBarQuestionsTitle Button{
+    background-color: rgb(28, 173, 209);
+    color: white;
+    border: none;
+    margin: 0.2em 1em;
+    padding: 0.6em 0.2em;
+    border-radius: 10%;
+}
