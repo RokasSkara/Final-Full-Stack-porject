@@ -1,14 +1,19 @@
 import '../CSS/header.css'
 import ViewHeadlineIcon from '@mui/icons-material/ViewHeadline';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
-    let logged = false;
+    const redirect = useNavigate()
     return (
         <header>
-            <div className='HeaderIcon'>
-                <ViewHeadlineIcon />
-                <p>Stack <span>Overflow</span></p>
-            </div>
+            <Link to={'/'}>
+                <div className='HeaderIcon'>
+                    <ViewHeadlineIcon />
+                    <p>Stack <span>Overflow</span></p>
+                </div>
+            </Link>
+
             <form action="" className="searchBar">
                 <input type="text" placeholder='Search...' />
             </form>

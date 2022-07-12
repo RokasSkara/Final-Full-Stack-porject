@@ -30,7 +30,7 @@ header span{
 
 }
 
-.HeaderUserInfo a {
+header a {
     color: white;
     text-decoration: none;
 }
