@@ -1,10 +1,8 @@
 import '../CSS/header.css'
 import ViewHeadlineIcon from '@mui/icons-material/ViewHeadline';
-import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-    const redirect = useNavigate()
     return (
         <header>
             <Link to={'/'}>
