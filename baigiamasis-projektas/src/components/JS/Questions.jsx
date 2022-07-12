@@ -1,5 +1,6 @@
 import '../CSS/Questions.css'
 import PostedQuestion from './PostedQuestionTab';
+import { Link } from 'react-router-dom'
 
 const QuestionsComp = () => {
     return (
@@ -7,7 +8,7 @@ const QuestionsComp = () => {
             <section className="TopBarQuestionsComp">
                 <div className='TopBarQuestionsTitle'>
                     <h1>Top Questions</h1>
-                    <button>Ask Question</button>    
+                    <Link to={'/askquestion'}>Ask Question</Link> 
                 </div>
             </section>
             <section className='QuestionMain'>
