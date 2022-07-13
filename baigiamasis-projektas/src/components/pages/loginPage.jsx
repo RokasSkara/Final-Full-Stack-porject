@@ -15,6 +15,7 @@ const LoginForm = () => {
         e.target.elements.password.value = ''
         fetch('http://localhost:5000/login', {
             method: 'POST',
+            credentials: 'include',
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -22,12 +23,12 @@ const LoginForm = () => {
         })
             .then(response => response.json())
             .then(data => {
+                console.log(data)
                 if (data.err) {
                     return alert(data.err)
                 }
                 else {
-                    localStorage.setItem('token', data.token)
-                    redirect('/Home')
+                    redirect('/')
                 }
             })
             .catch(err => { return alert(err) })

@@ -22,7 +22,7 @@ const RegisterForm = () => {
         })
             .then(response => response.json())
             .then(data => {
-                if (data.changes !== 1) return alert('Email or password is not valid')
+                if (data.completed !== 1) return alert('Email or password is not valid')
                 else {
                     alert('Registration succesfull, you will be redirected to Login window soon')
                     setTimeout(() => redirect('/login'), 1000)
