@@ -34,17 +34,20 @@ router.post('/', async (req, res) => {
                 }, privateKey, {
                     expiresIn: '120m'
                 })
-                return res.cookie("token", `${token}`, {
+                return res.cookie("token", `${token}+${email}`, {
                     httpOnly: true,
-                    secure: process.env.NODE_ENV === 'production'
+                    SameSite: 'None'
                 })
+                    .status(200)
+                    .send({msg: 'Success'})
             } else {
-                return res.json({
+                console.log('failed')
+                return res.status(400).send({
                     err: "Incorrect email or password",
                 })
             }
         } else {
-            return res.json({
+            return res.status(400).send({
                 err: "Incorrect email or password",
             })
         }
