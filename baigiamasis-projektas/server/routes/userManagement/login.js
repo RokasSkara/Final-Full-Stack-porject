@@ -13,7 +13,6 @@ router.post('/', async (req, res) => {
     try {
         CredentialValidation(req.body)
     } catch (err) {
-        console.log(err)
         return res.status(400).send({ err: 'Incorrect email or password' })
     }
     try {

@@ -27,7 +27,8 @@ router.post('/', async (req, res) => {
                     method: 'POST',
                     body: JSON.stringify({
                         email: email,
-                        password: hashedPass
+                        password: hashedPass,
+                        regTime: new Date()
                     }),
                     headers: { 'Content-Type': 'application/json' }
                 });

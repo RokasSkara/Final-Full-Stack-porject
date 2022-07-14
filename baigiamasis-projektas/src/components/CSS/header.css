@@ -27,7 +27,8 @@ header span{
 
 .HeaderUserInfo{
     padding: 8px 1em;
-
+    display: flex;
+    align-items: center;
 }
 
 header a {
@@ -35,3 +36,4 @@ header a {
     text-decoration: none;
     margin-right: 1em;
 }
+

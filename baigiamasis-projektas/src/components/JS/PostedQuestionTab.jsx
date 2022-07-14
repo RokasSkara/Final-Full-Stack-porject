@@ -17,7 +17,6 @@ const PostedQuestion = () => {
             </div>
             <section className="QuestionDetails">
                 <h3>Title</h3>
-                
                 <span>javascript</span>
                 <span>parsing</span>
                 <a href='' className='QuestionDetailsUser'>modified 1 min ago <span>User</span> </a>
