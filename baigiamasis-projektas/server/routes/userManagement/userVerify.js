@@ -13,8 +13,6 @@ router.get('/', (req,res) => {
     }  
 })
 
-router.get('/id', (req,res) => {
-    fetch('http://localhost:8080/users')
-})
+
 
 export default router
