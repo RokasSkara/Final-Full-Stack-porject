@@ -8,6 +8,7 @@ import userVerify from './routes/userManagement/userVerify.js'
 //pages
 import registration from './routes/userManagement/register.js'
 import login from './routes/userManagement/login.js'
+import logout from './routes/userManagement/logout.js'
 
 import user from './routes/api/user.js'
 
@@ -24,6 +25,7 @@ app.use('/register', registration);
 app.use('/login', login);
 app.use('/userVerify', userVerify)
 app.use('/user', user)
+app.use('/logout', logout)
 
 app.all('*', (req,res) => {
     res.status(404).send({error: 'Page not found'})
