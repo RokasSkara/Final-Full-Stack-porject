@@ -2,6 +2,7 @@ import '../CSS/createQuestionPage.css'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 
 
@@ -9,10 +10,38 @@ import { useState } from 'react'
 
 const CreateQuestionPage = () => {
 
+    const redirect = useNavigate()
 
     const submitQuestion = (e) => {
         e.preventDefault()
-        console.log('Sumitting')
+        fetch('http://localhost:5000/Question', {
+            method: 'POST',
+            credentials: 'include',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                title: e.target.elements.title.value,
+                content: e.target.elements.content.value
+            }),
+        })
+        .then(res => res.json())
+        .then(data => {
+            if(data.error){
+                return alert(data.error)
+            } else {
+                alert('Posted Successfully!')
+                e.target.elements.title.value = ''
+                e.target.elements.content.value = ''
+                setquestionTitle('')
+                setquestionBody('')
+                setTimeout(() => {
+                    redirect('/')
+                }, 2000);
+            }}
+            )
+            
+        .catch(err => alert(err))
     }
 
 
@@ -22,7 +51,7 @@ const CreateQuestionPage = () => {
     return (
         <section className="askAQuestionForm">
             <h1>Ask a question</h1>
-            <form onSubmit={() => submitQuestion()}>
+            <form onSubmit={submitQuestion}>
 
                 <input
                     type="text" name="title" placeholder="Enter question title"
@@ -46,7 +75,7 @@ const CreateQuestionPage = () => {
                         <ReactMarkdown Plugins={[remarkGfm]} children={questionBody} />
                     </div>
                 </div>
-                <input type="Submit" />
+                <input type="Submit"/>
             </form>
 
         </section>);

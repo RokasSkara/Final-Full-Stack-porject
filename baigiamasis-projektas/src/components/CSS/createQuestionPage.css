@@ -58,6 +58,8 @@
 .PreviewAreaBody{
     border: 1px solid rgb(104, 102, 102);
     padding: 0.5em 0.5em;
+    width: fit-content;
+    min-width: 20%;
 }
 
 .PreviewArea p {
