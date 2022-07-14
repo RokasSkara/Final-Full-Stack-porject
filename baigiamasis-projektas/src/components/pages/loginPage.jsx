@@ -1,7 +1,12 @@
 import { useNavigate } from 'react-router-dom'
 import '../CSS/LoginRegPage.css'
 
+import UserContext from '../JS/userContext';
+import { useContext } from 'react';
+
 const LoginForm = () => {
+
+    const logged = useContext(UserContext)
 
     const redirect = useNavigate()
 
@@ -23,11 +28,11 @@ const LoginForm = () => {
         })
             .then(response => response.json())
             .then(data => {
-                console.log(data)
                 if (data.err) {
                     return alert(data.err)
                 }
                 else {
+                    logged.checkAuth()
                     redirect('/')
                 }
             })
