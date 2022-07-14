@@ -36,7 +36,6 @@ const Profile = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 logged.setUser(null)
                 redirect('/')
             }

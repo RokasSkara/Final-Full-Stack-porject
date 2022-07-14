@@ -5,7 +5,48 @@
       "password": "$2b$05$bsH5Cs/k22NpatzhlRzLUe0uGq/.dJtiD8iKmR4Fsaj1DZe1s0Imq",
       "regTime": "2022-07-13T13:39:24.339Z",
       "id": 1
+    },
+    {
+      "email": "test2@test.com",
+      "password": "$2b$05$QsRD6bt2xyDkqI1SJjK53.WKqUz4A7Aw6dO2ZHkLgqGhXHtoQQfaG",
+      "regTime": "2022-07-14T09:02:23.386Z",
+      "id": 2
     }
   ],
-  "Posts": []
+  "Posts": [
+    {
+      "title": "Fetch post does not set-cookies on return even though its is visible in the header, it seems to be blocked by Cors",
+      "content": "Here's what I have so far for cors:\n\n```javascript\n app.use(cors({\n    origin: 'http://localhost:3000'\n}))\n```\n\nAnd here is my fetch:\n```\n fetch('http://localhost:5000/Question', {\n            method: 'POST',\n            headers: {\n                'Content-Type': 'application/json',\n            },\n            body: JSON.stringify({\n                title: e.target.elements.title.value,\n                content: e.target.elements.content.value\n            }),\n        })\n        .then(res => res.json())\n```\n\n",
+      "postTime": "7/14/2022, 1:17:27 PM",
+      "posterId": "1",
+      "posterName": "test@test.com",
+      "tags": [],
+      "postStatus": {
+        "eddited": false,
+        "edditDate": null,
+        "answered": false,
+        "votes": 0,
+        "answers": 0,
+        "views": 0
+      },
+      "id": 1
+    },
+    {
+      "title": "asd",
+      "content": "asd",
+      "postTime": "7/14/2022, 1:55:09 PM",
+      "posterId": "1",
+      "posterName": "test@test.com",
+      "tags": [],
+      "postStatus": {
+        "eddited": false,
+        "edditDate": null,
+        "answered": false,
+        "votes": 0,
+        "answers": 0,
+        "views": 0
+      },
+      "id": 2
+    }
+  ]
 }

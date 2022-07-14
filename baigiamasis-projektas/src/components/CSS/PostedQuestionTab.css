@@ -8,7 +8,7 @@
     border: 0.5px solid rgba(150, 149, 149,0.5);
 }
 
-.QuestionTab h3 {
+.QuestionTab h3,a {
     margin: 0px 0;
     text-decoration: none;
     color: rgb(62, 104, 219);
@@ -34,7 +34,7 @@
     margin-right: 5px;
 }
 
-.QuestionDetails a{
+.QuestionDetailsUser{
     display: inline-block;
     float: right;
     margin: 0;

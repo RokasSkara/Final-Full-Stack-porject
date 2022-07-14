@@ -19,7 +19,7 @@ const Header = () => {
             <Link to={'/'}>
                 <div className='HeaderIcon'>
                     <ViewHeadlineIcon />
-                    <p>Stack <span>Overflow</span></p>
+                    <h3>Stack <span>Overflow</span></h3>
                 </div>
             </Link>
 
