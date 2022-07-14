@@ -1,0 +1,46 @@
+.ProfileInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 2em 2em;
+}
+
+.ProfileInfo button{
+    background-color: rgb(28, 173, 209);
+    border: none;
+    margin-top: 1em;
+    padding: 0.6em 0.2em;
+    border-radius: 10%;
+    text-decoration: none;
+    color: white;
+    width: fit-content;
+}
+
+.ProfileInfo div{
+    background-color: rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    padding: 2em 2em;
+    border-radius: 10%;
+}
+
+.ProfileInfo h4{
+    color: rgb(229, 229, 238);
+}
+
+.ProfileInfo span{
+    color: aquamarine;
+}
+
+.ProfileInfo span:hover{
+  width: 100px;
+  height: 100px;
+  color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+  }
