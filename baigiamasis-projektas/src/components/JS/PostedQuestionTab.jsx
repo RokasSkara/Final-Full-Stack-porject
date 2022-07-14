@@ -1,27 +1,33 @@
+import { Link } from 'react-router-dom'
 import '../CSS/PostedQuestionTab.css'
 
-const PostedQuestion = () => {
+
+
+const PostedQuestion = ({ props }) => {
+
+
     return (<>
         <div className="QuestionTab">
             <div className="QuestionStatistics">
-                <h4>0</h4>
+                <h4>{props.postStatus.votes}</h4>
                 <span>Votes</span>
             </div>
             <div className="QuestionStatistics">
-                <h4>0</h4>
+                <h4>{props.postStatus.answers}</h4>
                 <span>Answer</span>
             </div>
             <div className="QuestionStatistics">
-                <h4>0</h4>
+                <h4>{props.postStatus.views}</h4>
                 <span>Views</span>
             </div>
             <section className="QuestionDetails">
-                <h3>Title</h3>
+                <h3><Link to={`questions/:${props.id}`}>{props.title}</Link></h3>
                 <span>javascript</span>
                 <span>parsing</span>
-                <a href='' className='QuestionDetailsUser'>modified 1 min ago <span>User</span> </a>
+                <Link to={''} className='QuestionDetailsUser'>{props.postStatus.eddited ? `modified ${props.postStatus.edditDate}`: `asked  ${props.postTime} by `}<span>{props.posterName}</span> </Link>
             </section>
         </div>
+
     </>);
 }
 
