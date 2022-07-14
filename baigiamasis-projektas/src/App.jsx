@@ -11,6 +11,7 @@ import Profile from '../src/components/pages/profile'
 import UserContext from './components/JS/userContext';
 import LoginForm from './components/pages/loginPage';
 import RegisterForm from './components/pages/register';
+import ViewQuestionPage from './components/pages/viewQuestionPage';
 
 
 
@@ -53,6 +54,7 @@ function App() {
           <Route path='/register' element={<RegisterForm />} />
           <Route path='/logout' element={<RegisterForm />} />
           <Route path='/profile' element={<Profile />} />
+          <Route path='/questions/:id' element={<ViewQuestionPage />} />
           <Route path='/askquestion' element={<AskAQuestion />} />
         </Routes>
         <Footer />
