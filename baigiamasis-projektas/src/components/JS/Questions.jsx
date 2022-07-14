@@ -1,8 +1,26 @@
 import '../CSS/Questions.css'
 import PostedQuestion from './PostedQuestionTab';
 import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react';
+
+
 
 const QuestionsComp = () => {
+
+    const [questions, setQuestions] = useState(null)
+
+    const getInfo = () => [
+        fetch('http://localhost:5000/question')
+        .then(res => res.json())
+        .then(data => {
+            setQuestions(data)})
+        .catch(err => setQuestions(null))
+    ]
+
+    useEffect(() => {
+        getInfo()
+    },[])
+
     return (
         <main>
             <section className="TopBarQuestionsComp">
@@ -12,7 +30,7 @@ const QuestionsComp = () => {
                 </div>
             </section>
             <section className='QuestionMain'>
-                <PostedQuestion />
+                {questions ? questions.map((question,id) => <PostedQuestion props={question} key={id} />): <h1>No questions posted yet</h1>}
             </section>
         </main>
     );
