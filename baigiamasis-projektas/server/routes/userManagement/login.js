@@ -18,11 +18,13 @@ router.post('/', async (req, res) => {
     try {
         let UserExists = false;
         let passCompare = ''
+        let userId = ''
         await fetch('http://localhost:8080/users')
         .then(res => res.json())
         .then(users => {
             UserExists = users.some(user => user.email === email)
             users.filter(user => user.email === email ? passCompare = user.password: '')
+           users.filter(user => user.email === email? userId = user.id: '')
         })
         if(UserExists){
             const Auth = await bcrypt.compare(password, passCompare)
@@ -33,7 +35,7 @@ router.post('/', async (req, res) => {
                 }, privateKey, {
                     expiresIn: '120m'
                 })
-                return res.cookie("token", `${token}+${email}`, {
+                return res.cookie("token", `${token}+${email}+${userId}`, {
                     httpOnly: true,
                     SameSite: 'None'
                 })
