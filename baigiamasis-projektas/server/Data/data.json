@@ -1,8 +1,11 @@
 {
-    "users": [
-
-    ],
-    "Posts":[
-    
-    ]
+  "users": [
+    {
+      "email": "test@test.com",
+      "password": "$2b$05$bsH5Cs/k22NpatzhlRzLUe0uGq/.dJtiD8iKmR4Fsaj1DZe1s0Imq",
+      "regTime": "2022-07-13T13:39:24.339Z",
+      "id": 1
+    }
+  ],
+  "Posts": []
 }
