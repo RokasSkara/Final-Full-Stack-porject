@@ -20,14 +20,14 @@ let isAuth = (req, res, next) => {
         const token = req.cookies.token?.split('+')[0]
         jwt.verify(token, privateKey, (err, decoded) => {
             if (err) {
-                return res.status(400).send({ err: 'You aint belong here' })
+                return res.status(400).send({ err: 'Verification failed, please relog and try again' })
             } else {
 
                 return next();
             }
         })
     } catch (err) {
-        return res.status(400).send({ err: 'You aint belong here' })
+        return res.status(400).send({ err: 'Verification failed, please relog and try again' })
     }
 }
 
