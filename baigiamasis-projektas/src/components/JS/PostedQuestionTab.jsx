@@ -22,8 +22,7 @@ const PostedQuestion = ({ props }) => {
             </div>
             <section className="QuestionDetails">
                 <h3><Link to={`questions/:${props.id}`}>{props.title}</Link></h3>
-                <span>javascript</span>
-                <span>parsing</span>
+                <span>Question status: {props.postStatus.answered === false? <span style={{color: 'red'}}>Not Answered</span>: <span style={{color: 'green'}}> Answered &#10003;</span>}</span>
                 <Link to={''} className='QuestionDetailsUser'>{props.postStatus.eddited ? `modified ${props.postStatus.edditDate}`: `asked  ${props.postTime} by `}<span>{props.posterName}</span> </Link>
             </section>
         </div>
