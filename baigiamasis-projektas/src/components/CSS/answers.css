@@ -1,0 +1,29 @@
+.ShowAnswer{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2em 2em;
+    border-radius: 5%;
+    min-width: fit-content;
+    width: 100%;
+    text-align: left;
+}
+
+.WhoWhenAnswered{
+    width: fit-content;
+}
+
+.FullAnswer{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+}
+
+.AnswerUserInfo{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.Answer-Wrapper{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-bottom: 2em;
+}
