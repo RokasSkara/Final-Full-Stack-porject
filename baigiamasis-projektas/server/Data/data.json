@@ -20,7 +20,6 @@
       "postTime": "7/14/2022, 1:17:27 PM",
       "posterId": "1",
       "posterName": "test@test.com",
-      "tags": [],
       "postStatus": {
         "eddited": false,
         "edditDate": null,
@@ -32,21 +31,71 @@
       "id": 1
     },
     {
-      "title": "asd",
-      "content": "asd",
-      "postTime": "7/14/2022, 1:55:09 PM",
+      "title": "test",
+      "content": "test",
+      "postTime": "7/15/2022, 3:27:24 PM",
       "posterId": "1",
       "posterName": "test@test.com",
-      "tags": [],
       "postStatus": {
         "eddited": false,
         "edditDate": null,
-        "answered": false,
+        "answered": true,
         "votes": 0,
         "answers": 0,
         "views": 0
       },
       "id": 2
     }
-  ]
+  ],
+  "Answers": [
+    {
+      "answerOwner": "test@test.com",
+      "answerOwnerID": "1",
+      "answerContent": "asdas",
+      "questionID": "1",
+      "answerTime": "7/15/2022, 2:28:05 PM",
+      "id": 1
+    },
+    {
+      "answerOwner": "test@test.com",
+      "answerOwnerID": "1",
+      "answerContent": "Your cors is missing curcial setting to allow credentials use:\n\n\n```javascript\n  app.use(cors({\n    origin: 'http://localhost:3000', \n    credentials: true\n}))\n```\n\nAs for Fetch, you are missing the same part (include credentials)\n\n```javascript\n\nfetch('http://localhost:5000/Question', {\n            method: 'POST',\n            credentials: 'include',\n            =======================\n            headers: {\n                'Content-Type': 'application/json',\n            },\n            body: JSON.stringify({\n                title: e.target.elements.title.value,\n                content: e.target.elements.content.value\n            }),\n        })\n        .then(res => res.json())\n      \n```",
+      "questionID": "1",
+      "answerTime": "7/15/2022, 2:36:54 PM",
+      "id": 2
+    },
+    {
+      "answerOwner": "test@test.com",
+      "answerOwnerID": "1",
+      "answerContent": "testssss",
+      "questionID": "1",
+      "answerTime": "7/15/2022, 2:43:31 PM",
+      "id": 3
+    },
+    {
+      "answerOwner": "test@test.com",
+      "answerOwnerID": "1",
+      "answerContent": "Very usesfull testasdasd asdasd",
+      "questionID": "2",
+      "answerTime": "7/15/2022, 3:35:24 PM",
+      "id": 6
+    },
+    {
+      "answerOwner": "test@test.com",
+      "answerOwnerID": "1",
+      "answerContent": "data",
+      "questionID": "2",
+      "answerTime": "7/15/2022, 3:37:18 PM",
+      "id": 7
+    },
+    {
+      "answerOwner": "test@test.com",
+      "answerOwnerID": "1",
+      "answerContent": "TEst4",
+      "questionID": "1",
+      "answerTime": "7/15/2022, 3:37:46 PM",
+      "id": 8
+    }
+  ],
+  "Votes": []
 }

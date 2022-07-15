@@ -37,7 +37,6 @@ router.post('/', isAuth, (req, res) => {
                 postTime: new Date().toLocaleString(),
                 posterId: id,
                 posterName: user,
-                tags: [],
                 postStatus: {
                     eddited: false,
                     edditDate: null,
@@ -50,12 +49,11 @@ router.post('/', isAuth, (req, res) => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 res.status(200).send({ msg: "All good!" })
             })
             .catch(err => res.status(400).send({ err: err }))
     } else {
-        return res.send({ error: 'Title or Content missing' })
+        return res.send({ err: 'Title or Content missing' })
     }
 })
 
