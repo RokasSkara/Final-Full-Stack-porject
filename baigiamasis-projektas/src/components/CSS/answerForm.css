@@ -1,0 +1,30 @@
+.AnswerWindow{
+    background: none;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    color: white;
+    padding: 0.5em 0.5em;
+}
+
+.AnswerForm{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+
+input[type='Submit']{
+    background-color: rgb(28, 173, 209);
+    border: none;
+    margin: 0.2em 1em;
+    padding: 0.6em 0.2em;
+    border-radius: 10%;
+    text-decoration: none;
+    color: white;
+    width: fit-content;
+    min-width: 100px;
+    align-self: flex-end;
+}
+
