@@ -16,11 +16,72 @@
 }
 
 .viewQuestion section{
-    display: flex;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    
 }
 
 .viewQuesitonStats{
-    display: grid;
-    grid-template-rows: 4;
+  padding: 1em 0.5em;
+}
+.VoteArrows div{
+    width: 50px;
+    text-align: center;
+}
+.VoteArrows button{
+    width: 50px;
+    text-align: center;
+    background: none;
+    border: none;
+    display: block;
+    padding: 0;
+    font-size: 2em;
+    cursor: pointer;
+    color: antiquewhite;
+}
+.VoteArrows button:hover{
+    color: green;
+}
 
+.ViewQuestionUserInfo{
+    float: right;
+    display: inline-block;
+    margin: 0;
+    text-decoration: none;
+    color: gray;
+    padding: 1em 1em;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10%;
+    color: white;
+}
+
+.ViewQuestionAnswers{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em;
+}
+
+.AddAnAnswer{
+    background-color: rgb(28, 173, 209);
+    border: none;
+    margin: 0.2em 1em;
+    padding: 0.6em 0.2em;
+    border-radius: 10%;
+    text-decoration: none;
+    color: white;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: 100px;
+    align-self: flex-end;
+
+}
+
+.AddAComment:hover{
+    color: rgb(129, 129, 235);
+}
+
+
+.CommentForm{
+    padding: 1em 1em;
 }
