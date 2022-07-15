@@ -12,6 +12,7 @@ import logout from './routes/userManagement/logout.js'
 
 import user from './routes/api/user.js'
 import Question from './routes/api/Question.js'
+import Answers from './routes/api/Answers.js'
 
 const PORT = 5000;
 const app = express();
@@ -28,6 +29,7 @@ app.use('/userVerify', userVerify)
 app.use('/user', user)
 app.use('/logout', logout)
 app.use('/question', Question)
+app.use('/answers', Answers)
 
 app.all('*', (req,res) => {
     res.status(404).send({error: 'Page not found'})
