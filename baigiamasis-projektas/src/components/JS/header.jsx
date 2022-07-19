@@ -22,12 +22,12 @@ const Header = () => {
                     <h3>Stack <span>Overflow</span></h3>
                 </div>
             </Link>
+            <div>
 
-            <form action="" className="searchBar">
-                <input type="text" placeholder='Search...' />
-            </form>
+            </div>
+
             <div className='HeaderUserInfo'>
-                {user ? <Link to={'/profile'} className="profileLink">{user.username}</Link> : <><Link to={'/login'} className="profileLink">Log-in</Link> <Link to={'/register'} className="profileLink">Register</Link></>}
+                {user ? <><span>Username:</span> <Link to={'/profile'} className="profileLink">{user.username}</Link></>  : <><Link to={'/login'} className="profileLink">Log-in</Link> <Link to={'/register'} className="profileLink">Register</Link></>}
             </div>
         </header>
     );
