@@ -21,7 +21,6 @@ const Profile = () => {
                     redirect('/')
                 } else {
                     setUser(data)
-                    console.log(data)
                 }
             }
             )
