@@ -7,6 +7,7 @@ import remarkGfm from "remark-gfm";
 const AnswerForm = (props) => {
     const { id} = props.id
     const { setshowForm } = props.id
+    const { getAnswers } = props.id
     const redirect = useNavigate()
 
 
@@ -31,6 +32,7 @@ const AnswerForm = (props) => {
                     alert('Answer Posted')
                     setTimeout(() => {
                         setshowForm(false)
+                        getAnswers()
                         redirect(`/questions/:${id}`)
                     },2000)
                 }
