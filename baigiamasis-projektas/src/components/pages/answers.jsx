@@ -12,7 +12,7 @@ const Answer = ({ props, getAnswers}) => {
     const [EditAnswer, setEditAnswer] = useState(false)
 
     const DeleteAnswer = (e) => {
-        fetch(`http://localhost:5000/answers/delete/${props.id}`, {
+        fetch(`http://localhost:5000/answers/delete/${props.id}/${props.questionID}`, {
             method: 'DELETE',
             credentials: 'include'
         })

@@ -20,6 +20,21 @@ const QuestionAddAnswer = (id) => {
 
 }
 
+const QuestionRemoveAnswer = (id) => {
+    fetch(`http://localhost:8080/Posts/${id}`)
+        .then(res => res.json())
+        .then(data => {
+            fetch(`http://localhost:8080/Posts/${id}`, {
+                method: 'PATCH',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    answer: data.answer - 1
+                })
+            })
+        })
+
+}
+
 router.get('/:id?', (req, res) => {
     if (req.params.id) {
         fetch(`http://localhost:8080/Answers`)
@@ -69,9 +84,9 @@ router.post('/', isAuth, (req, res) => {
     }
 })
 
-router.delete('/delete/:id', isAuth, (req, res) => {
-    const { id } = req.params
-
+router.delete('/delete/:id/:questionID', isAuth, (req, res) => {
+    const { id, questionID } = req.params
+    QuestionRemoveAnswer(questionID)
     fetch(`http://localhost:8080/Answers/${id}`, {
         method: 'DELETE',
     })
