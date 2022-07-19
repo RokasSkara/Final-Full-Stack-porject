@@ -11,6 +11,7 @@ import login from './routes/userManagement/login.js'
 import logout from './routes/userManagement/logout.js'
 
 import user from './routes/api/user.js'
+import Votes from './routes/api/Votes.js'
 import Question from './routes/api/Question.js'
 import Answers from './routes/api/Answers.js'
 
@@ -30,6 +31,7 @@ app.use('/user', user)
 app.use('/logout', logout)
 app.use('/question', Question)
 app.use('/answers', Answers)
+//app.use('/votes', Votes) --disabled in early access
 
 app.all('*', (req,res) => {
     res.status(404).send({error: 'Page not found'})
