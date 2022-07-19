@@ -20,22 +20,11 @@ header h3{
     align-items: center;
 }
 
-.searchBar input{
-    display: inline-block;
-    box-sizing: border-box;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
-    border: 1px solid #777;
-    padding: 5px 8px;
-    color: white;
-    font-size: medium;
-    font-family: sans-serif;
-}
-
 .HeaderUserInfo{
     padding: 8px 1em;
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 
 header a {

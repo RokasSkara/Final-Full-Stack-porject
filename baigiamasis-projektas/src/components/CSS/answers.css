@@ -27,3 +27,18 @@
     border-bottom: 1px solid white;
     margin-bottom: 2em;
 }
+
+.CancelEdit{
+    cursor: pointer;
+    background-color: rgb(28, 173, 209);
+    border: none;
+    margin: 0.2em 1em;
+    padding: 0.6em 0.2em;
+    border-radius: 10%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: fit-content;
+    min-width: 100px;
+    align-self: flex-end;
+}

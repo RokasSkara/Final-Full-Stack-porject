@@ -1,51 +1,32 @@
-.viewQuestion{
+.viewQuestion {
     padding: 1em 1em;
 }
 
-.viewQuestionContent{
+.viewQuestionContent {
     background-color: rgba(0, 0, 0, 0.1);
     padding: 2em 2em;
     border-radius: 5%;
 }
 
-.viewQuestion h1{
+.viewQuestion h1 {
     margin: 0;
     padding: 0.5em 1em;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 5%;
 }
 
-.viewQuestion section{
+.viewQuestion section {
     display: grid;
     grid-template-columns: 60px 1fr;
-    
+
 }
 
-.viewQuesitonStats{
-  padding: 1em 0.5em;
-}
-.VoteArrows div{
-    width: 50px;
-    text-align: center;
-}
-.VoteArrows button{
-    width: 50px;
-    text-align: center;
-    background: none;
-    border: none;
-    display: block;
-    padding: 0;
-    font-size: 2em;
-    cursor: pointer;
-    color: antiquewhite;
-}
-.VoteArrows button:hover{
-    color: green;
+.viewQuesitonStats {
+    padding: 1em 0.5em;
 }
 
-.ViewQuestionUserInfo{
+.ViewQuestionUserInfo {
     float: right;
-    display: inline-block;
     margin: 0;
     text-decoration: none;
     color: gray;
@@ -55,14 +36,14 @@
     color: white;
 }
 
-.ViewQuestionAnswers{
+.ViewQuestionAnswers {
     margin-top: 2em;
     display: flex;
     flex-direction: column;
     padding: 1em 1em;
 }
 
-.AddAnAnswer{
+.AddAnAnswer {
     background-color: rgb(28, 173, 209);
     border: none;
     margin: 0.2em 1em;
@@ -70,18 +51,34 @@
     border-radius: 10%;
     text-decoration: none;
     color: white;
-    width: -moz-fit-content;
     width: fit-content;
     min-width: 100px;
     align-self: flex-end;
 
 }
 
-.AddAComment:hover{
+.AddAComment:hover {
     color: rgb(129, 129, 235);
 }
 
-
-.CommentForm{
+.CommentForm {
     padding: 1em 1em;
+}
+
+.myQuestionControl {
+    display: flex;
+    justify-content: space-between;
+}
+
+.MarkAsAnswered {
+    background-color: rgb(28, 209, 125);
+    border: none;
+    margin: 0.2em 1em;
+    padding: 0.6em 0.2em;
+    border-radius: 10%;
+    text-decoration: none;
+    color: white;
+    width: fit-content;
+    min-width: 100px;
+    align-self: flex-end;
 }

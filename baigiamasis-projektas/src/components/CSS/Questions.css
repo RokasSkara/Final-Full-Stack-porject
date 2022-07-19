@@ -1,5 +1,3 @@
-
-
 .TopBarQuestionsTitle{
     display: flex;
     justify-content: space-between;
@@ -17,4 +15,46 @@
     color: white;
 }
 
+.HomePageFilters{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
+
+.HomePageFilters span{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #777;
+    padding: 5px 8px;
+    color: white;
+    font-size: medium;
+    font-family: sans-serif;
+}
+
+
+
+.HomePageFilters div{
+    display: flex;
+    flex-direction: column;
+}
+
+.selectedSort{
+    border: 1px red solid;
+}
+
+.HomePageFilters select{
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #777;
+    padding: 5px 8px;
+    color: white;
+    font-size: medium;
+    font-family: sans-serif;
+}
+
+select option {
+    margin: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
