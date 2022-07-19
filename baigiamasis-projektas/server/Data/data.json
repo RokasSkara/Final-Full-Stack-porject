@@ -27,7 +27,7 @@
       "answered": false,
       "votes": 0,
       "answer": 3,
-      "views": 107,
+      "views": 122,
       "id": 1
     },
     {
@@ -42,8 +42,8 @@
       },
       "answered": true,
       "votes": 0,
-      "answer": 2,
-      "views": 15,
+      "answer": 1,
+      "views": 22,
       "id": 2
     },
     {
@@ -59,23 +59,23 @@
       "answered": false,
       "votes": 0,
       "answer": 4,
-      "views": 16,
+      "views": 18,
       "id": 3
     },
     {
-      "title": "test3",
-      "content": "test3",
-      "postTime": "7/19/2022, 8:25:55 PM",
+      "title": "How to start programming",
+      "content": "Where to begin?",
+      "postTime": "7/19/2022, 8:38:21 PM",
       "posterId": "1",
       "posterName": "test@test.com",
       "postStatus": {
-        "eddited": false,
-        "edditDate": null
+        "eddited": true,
+        "edditDate": "7/19/2022, 8:38:21 PM"
       },
       "answered": false,
       "votes": 0,
-      "answer": 0,
-      "views": 1,
+      "answer": 2,
+      "views": 8,
       "id": 4
     }
   ],
@@ -101,17 +101,6 @@
       "edditDate": null,
       "votes": 0,
       "id": 6
-    },
-    {
-      "answerOwner": "test@test.com",
-      "answerOwnerID": "1",
-      "answerContent": "Nice edit bro...",
-      "questionID": "2",
-      "answerTime": "7/15/2022, 3:37:18 PM",
-      "eddited": true,
-      "edditDate": "7/18/2022, 3:03:49 PM",
-      "votes": 0,
-      "id": 7
     },
     {
       "answerOwner": "test2@test.com",
@@ -171,13 +160,35 @@
     {
       "answerOwner": "test@test.com",
       "answerOwnerID": "1",
-      "answerContent": "This ^ ;)\n\nedit: All right guys, you don't need to be dicks about it, my comments is helpful and you know it, don't be ***jealous pricks***!",
+      "answerContent": "This ^ ;)\n\nedit: All right guys, you don't need to be dicks about it, my comment is helpful and you know it, don't be ***jealous pricks***!",
       "questionID": "1",
       "answerTime": "7/19/2022, 9:43:03 AM",
       "eddited": true,
-      "edditDate": "7/19/2022, 7:47:57 PM",
+      "edditDate": "7/19/2022, 8:45:46 PM",
       "votes": 0,
       "id": 16
+    },
+    {
+      "answerOwner": "test2@test.com",
+      "answerOwnerID": "2",
+      "answerContent": "Not worth it, better trade stocks! Just get ~100k to start and you are good to go!",
+      "questionID": "4",
+      "answerTime": "7/19/2022, 8:39:31 PM",
+      "eddited": false,
+      "edditDate": null,
+      "votes": 0,
+      "id": 17
+    },
+    {
+      "answerOwner": "test@test.com",
+      "answerOwnerID": "1",
+      "answerContent": "test",
+      "questionID": "4",
+      "answerTime": "7/19/2022, 8:55:08 PM",
+      "eddited": false,
+      "edditDate": null,
+      "votes": 0,
+      "id": 18
     }
   ],
   "Votes": []
