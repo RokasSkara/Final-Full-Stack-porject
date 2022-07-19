@@ -3,8 +3,8 @@
     padding: 2em 2em;
     border-radius: 5%;
     min-width: fit-content;
-    width: 100%;
     text-align: left;
+    margin-top: 0.5em;
 }
 
 .WhoWhenAnswered{
