@@ -7,6 +7,9 @@ import remarkGfm from 'remark-gfm'
 import UserContext from '../JS/userContext';
 import LoginForm from '../pages/loginPage';
 
+/*
+    Used for quesiton creation - returns a form to be used by logged in user only
+*/
 
 
 const CreateQuestionPage = () => {

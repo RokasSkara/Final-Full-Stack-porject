@@ -1,5 +1,7 @@
 import styled from '@emotion/styled'
 
+// voting buttons will be used in upcoming update, currently only a design detail.
+
 const Button = styled.button`
     width: 50px;
     text-align: center;

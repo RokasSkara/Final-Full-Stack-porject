@@ -12,6 +12,12 @@ import EditQuestionForm from "../JS/editQuestionForm";
 import VotingBUttons from "../JS/votingButtons";
 
 
+/*
+ Individual question + its answers page.
+ If logged in allows to post an answer and edit own posts/questions as well as delete them or mark question answered
+*/
+
+
 const ViewQuestionPage = (props) => {
 
     let { id } = useParams()

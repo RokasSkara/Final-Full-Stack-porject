@@ -3,7 +3,9 @@ import HomeScreenQuestionTab from './HomeScreenQuestionTab';
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react';
 
-
+/*
+    Questions homescreen shows all posted questions with their stats, has an ability to sort/filter orders per select options shown above questions.
+*/
 
 const QuestionsComp = () => {
 

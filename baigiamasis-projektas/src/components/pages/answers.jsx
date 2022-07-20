@@ -7,6 +7,8 @@ import VotingButtons from "../JS/votingButtons";
 import { useContext, useState } from 'react';
 import EditAnswerForm from "../JS/editAnswerForm";
 
+/* Answer tab that alows owner of the answer to edit/delete it, not logged in users can see the answer and its details (post time/is edited) */
+
 
 const Answer = ({ props, getAnswers}) => {
     const [EditAnswer, setEditAnswer] = useState(false)

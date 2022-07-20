@@ -1,6 +1,11 @@
 import { useNavigate } from 'react-router-dom'
 import '../CSS/LoginRegPage.css'
 
+
+/*
+Handles user registration
+*/
+
 const RegisterForm = () => {
     const redirect = useNavigate()
 

@@ -2,16 +2,15 @@ import '../CSS/header.css'
 import ViewHeadlineIcon from '@mui/icons-material/ViewHeadline';
 import { Link } from 'react-router-dom';
 import UserContext from '../JS/userContext'
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
+
+/*
+    Header contains user profile link if user is logged in, otherwise shows login and register links
+*/
 
 const Header = () => {
 
     const { user } = useContext(UserContext)
-    
-    useEffect(() => {
-        
-    })
-
 
 
     return (

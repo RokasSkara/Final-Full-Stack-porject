@@ -4,6 +4,11 @@ import '../CSS/answers.css'
 
 import { useState } from 'react';
 
+/*
+Edit form pops up if click on edit button.
+Allows to edit user's answer and refreshes answers once edit is done via getAnswers function as well as hides edit form with setEditAnswer
+*/
+
 const EditAnswerForm = ({ props, getAnswers, setEditAnswer }) => {
 
     const [questionBody, setquestionBody] = useState(props.answerContent)

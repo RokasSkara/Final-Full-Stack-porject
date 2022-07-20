@@ -4,6 +4,11 @@ import ReactMarkdown from "react-markdown";
 import { useNavigate } from 'react-router-dom';
 import remarkGfm from "remark-gfm";
 
+/*
+Return answer form with an ability to post it.
+Uses markdown package to allow its syntax usage.
+*/
+
 const AnswerForm = (props) => {
     const { id} = props.id
     const { setshowForm } = props.id

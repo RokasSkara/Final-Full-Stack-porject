@@ -4,6 +4,11 @@ import { useState } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 
+/*
+    Returns question edit form.
+    Refreshes question info via getQuestion function as well as hides edit form with setShowEdit funcion.
+*/
+
 
 const EditQuestionForm = ({ props, getQuestion, setShowEdit }) => {
 

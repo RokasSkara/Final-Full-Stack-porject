@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
 import '../CSS/HomeScreenQuestionTab.css'
 
-
+/*
+    HomeScreenQuestionTab is a question tab componenet that is used to generate quesiton table unit in homapage.
+*/
 
 const PostedQuestion = ({ props }) => {
 

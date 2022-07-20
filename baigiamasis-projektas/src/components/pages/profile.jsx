@@ -3,6 +3,10 @@ import { useNavigate } from 'react-router-dom'
 import UserContext from '../JS/userContext';
 import '../CSS/profile.css'
 
+/*
+User profile page, shows username and register date, has an option to logout
+*/
+
 const Profile = () => {
 
     const redirect = useNavigate()
